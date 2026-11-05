@@ -18,7 +18,7 @@ export async function WelcomeWidget() {
       <div className="flex flex-col">
         <CardTitle className="flex items-center justify-between">
           <span className="text-2xl font-bold">
-            <ColoredText>Hey, I&apos;m TaxHacker 👋</ColoredText>
+            <ColoredText>Hey, I&apos;m your Invoice Reader 👋</ColoredText>
           </span>
           <Button
             variant="outline"
@@ -34,8 +34,7 @@ export async function WelcomeWidget() {
         </CardTitle>
         <CardDescription className="mt-5">
           <p className="mb-3">
-            I&apos;m a little accountant app that helps you deal with endless receipts, checks and invoices with (you
-            guessed it) AI. Here&apos;s what I can do:
+            I help you deal with endless receipts, bills and invoices using AI. Here&apos;s what I can do:
           </p>
           <ul className="mb-5 list-disc pl-5 space-y-1">
             <li>
@@ -53,7 +52,7 @@ export async function WelcomeWidget() {
               settings and change them however you want.
             </li>
             <li>
-              I save data in a <strong>local SQLite database</strong> and can export it to CSV and ZIP archives.
+              I save data in <strong>your own database</strong> and can export it to CSV and ZIP archives.
             </li>
             <li>
               You can even <strong>create your own new fields</strong> to be analyzed and they will be included in the
@@ -69,20 +68,19 @@ export async function WelcomeWidget() {
           </p>
         </CardDescription>
         <div className="mt-2">
-          <Link href="https://github.com/vas3k/TaxHacker" className="text-blue-500 hover:underline">
+          <Link href="https://github.com/rishav00roy-web/invoice-maker-app" className="text-blue-500 hover:underline">
             Source Code
           </Link>
           <span className="mx-2">|</span>
-          <Link href="https://github.com/vas3k/TaxHacker/issues" className="text-blue-500 hover:underline">
-            Request New Feature
-          </Link>
-          <span className="mx-2">|</span>
-          <Link href="https://github.com/vas3k/TaxHacker/issues" className="text-blue-500 hover:underline">
+          <Link
+            href="https://github.com/rishav00roy-web/invoice-maker-app/issues"
+            className="text-blue-500 hover:underline"
+          >
             Report a Bug
           </Link>
           <span className="mx-2">|</span>
-          <Link href="mailto:me@vas3k.ru" className="text-blue-500 hover:underline">
-            Contact the Author
+          <Link href="https://github.com/vas3k/TaxHacker" className="text-blue-500 hover:underline">
+            Built on TaxHacker (MIT)
           </Link>
         </div>
         <div className="flex flex-wrap gap-2 mt-8">
@@ -90,7 +88,7 @@ export async function WelcomeWidget() {
             <Link href="/settings/llm">
               <Button>
                 <Key className="h-4 w-4" />
-                Please give your ChatGPT key here
+                Add your AI key here
               </Button>
             </Link>
           )}

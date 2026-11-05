@@ -19,7 +19,7 @@ export default function ProfileSettingsForm({ user }: { user: User }) {
 
       <form action={saveAction} className="space-y-8">
         <div className="space-y-4">
-          <h3 className="text-lg font-semibold">Your TaxHacker Profile</h3>
+          <h3 className="text-lg font-semibold">Your Profile</h3>
           <FormAvatar
             title="Avatar"
             name="avatar"
@@ -45,9 +45,7 @@ export default function ProfileSettingsForm({ user }: { user: User }) {
         <div className="space-y-4">
           <div className="space-y-1">
             <h3 className="text-lg font-semibold">Your Business Details</h3>
-            <p className="text-sm text-muted-foreground">
-              Used on invoices and as defaults across the app.
-            </p>
+            <p className="text-sm text-muted-foreground">Used on invoices and as defaults across the app.</p>
           </div>
           <FormInput
             title="Business Name"
