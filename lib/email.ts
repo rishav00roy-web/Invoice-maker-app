@@ -12,7 +12,7 @@ export async function sendOTPCodeEmail({ email, otp }: { email: string; otp: str
   return await resend.emails.send({
     from: config.email.from,
     to: email,
-    subject: "Your TaxHacker verification code",
+    subject: "Your Invoice Reader verification code",
     react: html,
   })
 }

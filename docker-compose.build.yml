@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: taxhacker:local
+    image: invoice-reader:local
     ports:
       - "127.0.0.1:7331:7331"
     environment:
@@ -24,7 +24,7 @@ services:
         max-file: "3"
 
   cron:
-    image: taxhacker:local
+    image: invoice-reader:local
     environment:
       - NODE_ENV=production
       - SELF_HOSTED_MODE=true

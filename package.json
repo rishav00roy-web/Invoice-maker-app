@@ -1,5 +1,5 @@
 {
-  "name": "taxhacker",
+  "name": "invoice-reader",
   "version": "0.8.5",
   "private": true,
   "type": "module",

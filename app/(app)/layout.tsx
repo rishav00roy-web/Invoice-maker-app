@@ -14,7 +14,7 @@ import { NotificationProvider } from "./context"
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | TaxHacker",
+    template: "%s | Invoice Reader",
     default: config.app.title,
   },
   description: config.app.description,

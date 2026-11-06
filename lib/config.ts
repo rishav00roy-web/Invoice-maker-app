@@ -17,7 +17,7 @@ const envSchema = z.object({
     .default("please-set-your-key-here"),
   DISABLE_SIGNUP: z.enum(["true", "false"]).default("false"),
   RESEND_API_KEY: z.string().default("please-set-your-resend-api-key-here"),
-  RESEND_FROM_EMAIL: z.string().default("TaxHacker <user@localhost>"),
+  RESEND_FROM_EMAIL: z.string().default("Invoice Reader <user@localhost>"),
   RESEND_AUDIENCE_ID: z.string().default(""),
   STRIPE_SECRET_KEY: z.string().default(""),
   STRIPE_WEBHOOK_SECRET: z.string().default(""),
@@ -27,11 +27,11 @@ const env = envSchema.parse(Object.fromEntries(Object.entries(process.env).filte
 
 const config = {
   app: {
-    title: "TaxHacker",
-    description: "Your personal AI accountant",
+    title: "Invoice Reader",
+    description: "AI invoice and receipt reader by Atelier Systems",
     version: packageJson.version || "0.0.1",
     baseURL: env.BASE_URL || `http://localhost:${env.PORT || "7331"}`,
-    supportEmail: "me@vas3k.com",
+    supportEmail: process.env.SUPPORT_EMAIL || "",
   },
   upload: {
     acceptedMimeTypes: "image/*,.pdf,.doc,.docx,.xls,.xlsx",

@@ -197,9 +197,9 @@ export function AppSidebar({
                 {isSelfHosted && (
                   <SidebarMenuItem>
                     <SidebarMenuButton asChild>
-                      <Link href="https://vas3k.com/donate/" target="_blank">
+                      <Link href="https://github.com/vas3k/TaxHacker" target="_blank">
                         <Gift />
-                        Thank the author
+                        Built on TaxHacker
                       </Link>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
